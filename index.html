@@ -1,28 +1,36 @@
 ﻿<html>
+<!-- Header: includes the title, favicon, and link to external style sheet. -->
 <head>
     <title>Francis Dominic Fajardo - CMSC 100 Portfolio</title>
     <link rel="icon" href="favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="assets/main.css"/>
 </head>
+<!-- Body: the main content. -->
 <body>
+    <!-- Header: contains the name/logo and navigation links. -->
     <header>
         <div id="header-logo">
         FRANCIS DOMINIC FAJARDO
         </div>
         <div id="header-nav">
+            <!-- The navigation links point to the in-page sections. -->
             <a class="nav-link" href="#section-home">HOME</a>
             <a class="nav-link" href="#section-projects">PROJECTS</a>
             <a class="nav-link" href="#section-about">ABOUT</a>
         </div>
     </header>
+    <!-- Main: contains the featured photo, projects, and skills/bio sections. -->
     <main>
+        <!-- Home section: featured photo. -->
         <div id="section-home" class="section">
             <h2>Featured Photo</h2>
             <img id="featured-photo" src="assets/images/featured.png" alt="Featured Photo"/>
         </div>
+        <!-- Projects section: separated into different "cards" held by a flex container. -->
         <div id="section-projects" class="section">
             <h2>Projects</h2>
             <div class="col-box">
+                <!-- Project 1 -->
                 <div class="box-item">
 <img src="assets/images/9.jpg" alt="Project preview image"/>
 <p>
@@ -32,6 +40,7 @@ Western-themed Shooting Game<br/>
 <strong>Technologies:</strong> Java/JavaFX<br/>
 </p>
                 </div>
+                <!-- Project 2 -->
                 <div class="box-item">
 <img src="assets/images/8.jpg" alt="Project preview image"/>
 <p>
@@ -41,6 +50,7 @@ Investigative Point and Click Adventure Game<br/>
 <strong>Technologies:</strong> Python, Pygame<br/>
 </p>
                 </div>
+                <!-- Project 3 -->
                 <div class="box-item">
 <img src="assets/images/7.jpg" alt="Project preview image"/>
 <p>
@@ -50,6 +60,7 @@ Interactive Front-end for Banana Plantation Pest Management<br/>
 <strong>Technologies:</strong> HTML, CSS, JS<br/>
 </p>
                 </div>
+                <!-- Project 4 -->
                 <div class="box-item">
 <img src="assets/images/6.jpg" alt="Project preview image"/>
 <p>
@@ -61,10 +72,13 @@ Customizable voting/polling system<br/>
                 </div>
             </div>
         </div>
+        <!-- About section: contains the skills and autobiography parts. -->
         <div id="section-about" class="section">
             <div class="col-box">
+                <!-- Skills card. -->
                 <div class="box-item no-bg">
                     <h2>Skills</h2>
+                    <!-- Actual skills content. -->
                     <div class="box-inner">
                     <p>
 UX/UI Design; Wireframing; Prototyping; Project Management; Product Management; Leadership
@@ -77,11 +91,15 @@ UX/UI Design; Wireframing; Prototyping; Project Management; Product Management; 
                     </p>
                     </div>
                 </div>
+                <!-- Autobiography card. -->
                 <div class="box-item no-bg">
                     <h2>Autobiography</h2>
                     <div class="box-inner">
+                        <!-- Separated inside another flex container to allow for 2 columns. -->
                         <div class="profile-box">
+                            <!-- The profile image. -->
                             <img id="profile-image" class="box-item" src="assets/images/profile.jpg" alt="Profile image"/>
+                            <!-- The actual autobiography text, including links. -->
                             <span class="box-item">
 I'm <strong>Francis Dominic Fajardo</strong>, a BS Computer Science student at the University of the Philippines - Los Baños.
 <br/><br/>
@@ -93,18 +111,24 @@ I've always been fascinated by computers since I was exposed to technology as a 
             </div>
         </div>
     </main>
+    <!-- Footer: contains end links and alternate logo placement (uses a flexbox). -->
     <footer>
         <div class="col-box">
+            <!-- The footer logo placement. -->
             <div id="footer-logo" class="box-item no-bg">
                 <img src="assets/icons/icon_76x76.png" width="76" height="76"/>
             </div>
+            <!-- Footer text and links. -->
             <div id="footer-text" class="box-item no-bg">
+                <!-- The links are in one line only. -->
                 <div>
                 <a href="https://fofajardo.github.io/">Visit the full portfolio</a> | <a href="https://fofajardo.github.io/#contact">Contact Me</a> | <a href="https://github.com/CMSC100-1S2324/my-github-page-fofajardo">View on GitHub</a>
                 </div>
+                <!-- Copyright notice. -->
                 <div>
 © 2023 Francis Dominic Fajardo
                 </div>
+                <!-- Back to top of the page link. -->
                 <div>
                     <a href="#TOP">↑ Back to Top</a>
                 </div>
