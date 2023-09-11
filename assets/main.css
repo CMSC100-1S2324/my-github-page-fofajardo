@@ -1,15 +1,19 @@
 body {
   margin: 0;
   font-family: "Google Sans", sans;
+  background: #e1f1ff;
 }
 
 header {
   padding: 1em;
-  background: #fff;
+  margin: 1em;
+  border-radius: 1em;
+  background: #bdd7ff;
   font-weight: 500;
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.15);
   display: flex;
   justify-content: space-between;
+  position: sticky;
+  top: 5px;
 }
 
 #header-nav > .nav-link {
@@ -20,17 +24,31 @@ header {
 }
 
 #header-nav > .nav-link:hover {
-  background: #f2f2f2;
+  background: rgba(0, 0, 0, 0.10);
 }
 
 footer {
   padding: 1em;
-  background: #f2f2f2;
-  border-top: 1px solid #f0f0f0;
+  background: #bdd7ff;
+}
+
+a {
+  text-decoration: none;
+  color: #015bbc;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h2 {
+  color: #06214a;
 }
 
 .section h2 {
   text-align: center;
+  text-transform: uppercase;
 }
 
 .section {
@@ -44,14 +62,15 @@ footer {
   flex-wrap: wrap;
 }
 
+.col-box > .box-item.no-bg > .box-inner,
 .col-box > .box-item:not(.no-bg) {
-  background: #f2f2f2;
+  background: #fff;
+  padding: 1em;
+  border-radius: 1em;
 }
 
 .col-box > .box-item {
-  padding: 1em;
   flex: 200px;
-  border-radius: 1em;
 }
 
 .col-box > .box-item > img {
@@ -67,12 +86,7 @@ footer {
 }
 
 .col-box > .box-item > h3 a {
-  text-decoration: none;
-  color: #015bbc;
-}
-
-.col-box > .box-item > h3 a:hover {
-  text-decoration: underline;
+  font-weight: bold;
 }
 
 .profile-box > .box-item {
