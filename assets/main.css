@@ -1,9 +1,4 @@
-body {
-  margin: 0;
-  font-family: "Overpass", sans;
-  background: #e1f1ff;
-  scroll-behavior: smooth;
-}
+/* ::::: header ::::: */
 
 header {
   padding: 1em;
@@ -29,11 +24,49 @@ header {
   background: rgba(0, 0, 0, 0.10);
 }
 
+/* ::::: footer ::::: */
+
 footer {
   padding: 1em;
   background: #bdd7ff;
 }
 
+/*
+ * Modify footer flex behavior since we inherit properties from
+ * the generic flexbox classes. This way, the logo stays only on
+ * the left side rather than consuming equal amounts of space.
+ */
+#footer-logo {
+  flex: 0;
+}
+
+#footer-logo > img {
+  width: 76px;
+  height: 76px;
+}
+
+/*
+ * Include spacing between footer items/links.
+ */
+#footer-text > div:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* ::::: body ::::: */
+
+body {
+  /* Remove default margin. */
+  margin: 0;
+  font-family: "Overpass", sans;
+  background: #e1f1ff;
+  /* Make anchor links scroll smoothly. */
+  scroll-behavior: smooth;
+}
+
+/*
+ * Tweak link appearance to match the theme.
+ * Underline is only visible on hover.
+ */
 a {
   text-decoration: none;
   color: #015bbc;
@@ -44,26 +77,31 @@ a:hover {
   text-decoration: underline;
 }
 
-h2 {
-  color: #06214a;
-}
-
-.section h2 {
-  text-align: center;
-  text-transform: uppercase;
-}
+/* ::::: section ::::: */
 
 .section {
   margin: 1em;
 }
 
+.section h2 {
+  color: #06214a;
+  text-align: center;
+  /* Make level 2 headings uppercase despite text content. */
+  text-transform: uppercase;
+}
+
+/* ::::: flex boxes: general ::::: */
+
 .profile-box,
 .col-box {
   display: flex;
-  gap: 1em;
   flex-wrap: wrap;
+  gap: 1em;
 }
 
+/*
+ * Move card-like appearance to inner box if the item is explicitly marked.
+ */
 .col-box > .box-item.no-bg > .box-inner,
 .col-box > .box-item:not(.no-bg) {
   background: #fff;
@@ -75,21 +113,39 @@ h2 {
   flex: 200px;
 }
 
+/*
+ * Images inside flexbox items are rounded by default and consume
+ * an ample amount of space.
+ */
 .col-box > .box-item > img {
+  border-radius: 1em;
   width: 100%;
   height: 256px;
+  /* Crop image to fit our set dimensions. */
   object-position: center center;
   object-fit: cover;
-  border-radius: 1em;
 }
 
+/* Remove margin from level 3 header. */
 .col-box > .box-item > h3 {
   margin: 0;
 }
 
+/* Emphasize project titles. */
 .col-box > .box-item > h3 a {
   font-weight: bold;
 }
+
+/*
+ * Custom styling for the featured photo since it doesn't
+ * share anything with the above rules.
+ */
+#featured-photo {
+  width: 100%;
+  border-radius: 1em;
+}
+
+/* ::::: flex boxes: profile/autobiography ::::: */
 
 .profile-box > .box-item {
   flex: 1;
@@ -103,28 +159,12 @@ h2 {
   align-self: center;
 }
 
-#featured-photo {
-  width: 100%;
-  border-radius: 1em;
-}
-
-#footer-logo {
-  flex: 0;
-}
-
-#footer-logo > img {
-  width: 76px;
-  height: 76px;
-}
-
-#footer-text > div:not(:last-child) {
-  margin-bottom: 8px;
-}
+/* ::::: mobile view adjustments ::::: */
 
 @media screen and (max-width: 768px) {
-  .profile-box {
-    flex-direction: column;
-  }
+  /*
+   * Modify header appearance and make it look like a list.
+   */
   header {
     flex-direction: column;
     position: static;
@@ -138,5 +178,12 @@ h2 {
     padding: 5px 1em;
     margin: 0;
     border-radius: 1em;
+  }
+  /*
+   * Collapse profile box (autobiography) although there is still
+   * available space because it doesn't look right.
+   */
+  .profile-box {
+    flex-direction: column;
   }
 }
