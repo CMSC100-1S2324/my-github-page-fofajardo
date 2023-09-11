@@ -108,6 +108,19 @@ h2 {
   border-radius: 1em;
 }
 
+#footer-logo {
+  flex: 0;
+}
+
+#footer-logo > img {
+  width: 76px;
+  height: 76px;
+}
+
+#footer-text > div:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 @media screen and (max-width: 768px) {
   .profile-box {
     flex-direction: column;
