@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: "Google Sans", sans;
+  font-family: "Overpass", sans;
   background: #e1f1ff;
 }
 
@@ -9,7 +9,7 @@ header {
   margin: 1em;
   border-radius: 1em;
   background: #bdd7ff;
-  font-weight: 500;
+  font-weight: bold;
   display: flex;
   justify-content: space-between;
   position: sticky;
