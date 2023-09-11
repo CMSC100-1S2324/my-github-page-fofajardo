@@ -112,4 +112,18 @@ h2 {
   .profile-box {
     flex-direction: column;
   }
+  header {
+    flex-direction: column;
+    position: static;
+    text-align: center;
+  }
+  #header-logo {
+    margin-bottom: 1em;
+  }
+  #header-nav > .nav-link {
+    display: block;
+    padding: 5px 1em;
+    margin: 0;
+    border-radius: 1em;
+  }
 }
