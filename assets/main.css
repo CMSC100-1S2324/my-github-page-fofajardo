@@ -60,6 +60,19 @@ footer {
   border-radius: 1em;
 }
 
+.col-box > .col-item > h3 {
+  margin: 0;
+}
+
+.col-box > .col-item > h3 a {
+  text-decoration: none;
+  color: #015bbc;
+}
+
+.col-box > .col-item > h3 a:hover {
+  text-decoration: underline;
+}
+
 #featured-photo {
   width: 100%;
   border-radius: 1em;
