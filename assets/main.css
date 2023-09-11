@@ -13,7 +13,7 @@ header {
 }
 
 #header-nav > .nav-link {
-  margin: 0 1em;
+  margin: 0;
   padding: 1em;
   text-decoration: none;
   color: #000;
