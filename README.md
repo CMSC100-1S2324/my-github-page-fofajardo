@@ -14,8 +14,8 @@
 6. Deployment of your GitHub page can be monitored in the *Actions* tab of your repository.
 
 ## Key Takeaways
-- Implementing and thinking of the site's design and layout is important to ensure that users will be able to view, understand, and appreciate your page without any difficulties.
-- An ugly site/web page that doesn't follow good practices in terms of design and layout can confuse and distract users or visitors of the page.
+- Planning and implementing the site's design and layout is important to ensure that users will be able to view, understand, and appreciate your page without any difficulties.
+- An unappealing site/web page that doesn't follow good practices in terms of design and layout can confuse and distract the users or visitors of the page.
 - Creating and deploying a live GitHub Pages site is relatively simple, provided that the steps are followed.
 
 ## Others
